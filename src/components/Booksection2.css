@@ -1,0 +1,284 @@
+.bs2-section {
+    position: relative;
+    width: 100%;
+    background: transparent;
+    padding: 6vh 0 8vh;
+    overflow: hidden;
+  }
+  
+  .bs2-top-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 18vh;
+    background: linear-gradient(to bottom, #12091F, transparent);
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  /* ─── Background sigil ───────────────────────────────────────────── */
+  .bs2-bg-sigil {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vmin;
+    height: 70vmin;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  /* ─── Inner content ──────────────────────────────────────────────── */
+  /* z-index BELOW .bs-sticky (10) so canvas stays on top */
+  .bs2-inner {
+    position: relative;
+    z-index: 3;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 5vw;
+  }
+  
+  /* ─── Header ─────────────────────────────────────────────────────── */
+  .bs2-header {
+    text-align: left;
+    margin-bottom: 5rem;
+    opacity: 0;
+  }
+  
+  .bs2-eyebrow {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #C8A2FF; /* Lavender */
+    margin-bottom: 1.5rem;
+  }
+  
+  .bs2-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #fff0f3;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    margin-bottom: 2rem;
+  }
+  
+  .bs2-subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+    color: rgba(255, 240, 243, 0.7);
+    line-height: 1.9;
+    max-width: 480px;
+    letter-spacing: 0.02em;
+  }
+  
+  /* ─── Rules list ─────────────────────────────────────────────────── */
+  .bs2-rules {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  /* ─── Single rule card ───────────────────────────────────────────── */
+  .bs2-rule {
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    opacity: 0;
+    padding-bottom: 3.5rem;
+    border-bottom: 1px solid rgba(93, 63, 211, 0.15);
+  }
+  
+  .bs2-rule:last-child {
+    border-bottom: none;
+  }
+  
+  .bs2-rule-number {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: rgba(200, 162, 255, 0.25);
+    line-height: 1;
+    padding-top: 0rem;
+    letter-spacing: -0.02em;
+    text-align: right;
+  }
+  
+  .bs2-rule-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .bs2-rule-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: #FFD700; /* Gold */
+  }
+  
+  .bs2-rule-text {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-weight: 500;
+    color: #fff0f3;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+  }
+  
+  .bs2-rule-note {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(0.82rem, 1.1vw, 0.95rem);
+    color: rgba(255, 240, 243, 0.65);
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    border-left: 1px solid rgba(200, 162, 255, 0.3);
+    padding-left: 1.2rem;
+    margin-top: 0.25rem;
+  }
+  
+  /* ─── Closing quote ──────────────────────────────────────────────── */
+  .bs2-closing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    opacity: 0;
+    text-align: center;
+    padding: 5vh 0 15vh;
+  }
+  
+  .bs2-closing-line {
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(93, 63, 211, 0.5), transparent);
+  }
+  
+  .bs2-closing-quote {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+    color: #fff0f3;
+    line-height: 1.8;
+    max-width: 560px;
+    letter-spacing: 0.02em;
+    margin: 0;
+  }
+  
+  .bs2-closing-attr {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #FFD700;
+  }
+
+ /* ─── Poem Container ─────────────────────────────────────────────── */
+.poem-container {
+  margin: 4rem auto 0;
+  text-align: center;
+  max-width: 720px;
+  position: relative;
+  z-index: 5;
+  background: linear-gradient(rgba(18, 9, 31, 0.9), rgba(18, 9, 31, 0.9)), 
+              url('./change_theme_into_purple_color_202608111424.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(200, 162, 255, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 30px rgba(93, 63, 211, 0.15);
+}
+
+.poem-eyebrow {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: #C8A2FF; /* Lavender */
+  margin-bottom: 1rem;
+}
+
+.poem-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #FFD700; /* Gold */
+  margin-bottom: 3rem;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.25);
+}
+
+.poem-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.poem-stanza {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.poem-line {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+  line-height: 1.8;
+  color: #fff0f3;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  will-change: opacity, transform;
+  opacity: 1; 
+}
+
+/* ─── Closing quote ──────────────────────────────────────────────── */
+.bs2-closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  opacity: 0;
+  text-align: center;
+  padding: 1rem 0 8vh; /* Reduced top padding to 1rem to pull everything upward */
+  margin-top: 0;
+}
+
+.bs2-closing-line {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(93, 63, 211, 0.5), transparent);
+}
+
+.bs2-closing-quote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  color: #fff0f3;
+  line-height: 1.6;
+  max-width: 560px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.bs2-closing-attr {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #FFD700;
+}

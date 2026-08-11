@@ -1,0 +1,272 @@
+# Build a Premium Interactive Exam-Wish Website
+
+Create a stunning, premium-quality, single-page website that wishes a girl good luck for her upcoming exam.
+
+The experience should feel cinematic, emotional, luxurious, and memorable rather than childish or overly romantic. The design should resemble a premium digital greeting card mixed with an Apple-style product page and modern storytelling website.
+
+## Tech Requirements
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* GSAP (ScrollTrigger, Text animations)
+* Responsive Design
+* No frameworks
+* Clean and well-commented code
+* Smooth scrolling
+* High performance
+
+---
+
+## Visual Theme
+
+### Primary Colors
+
+* Dark Purple (#12091F)
+* Royal Purple (#5D3FD3)
+* Lavender (#C8A2FF)
+* Gold (#FFD700)
+* Silver (#C0C0C0)
+
+### Design Style
+
+* Luxury Dark Mode
+* Glassmorphism
+* Soft glow effects
+* Elegant gradients
+* Floating particles
+* Cinematic transitions
+* Premium typography
+* Smooth animations
+
+---
+
+## Website Structure
+
+### Section 1 – Hero
+
+Fullscreen hero section.
+
+Background:
+
+* Slow cinematic animated background
+* Optional video background support
+* Dark purple overlay
+
+Content:
+Large headline:
+
+"Good Luck for Your Exam ✨"
+
+Subheading:
+
+"You've worked hard, believed in yourself, and come this far. Now it's time to shine."
+
+Animated reveal using GSAP.
+
+Add subtle floating particles.
+
+Add a glowing scroll indicator.
+
+---
+
+### Section 2 – Encouragement Message
+
+Create a premium card with glassmorphism.
+
+Display:
+
+"Every page you studied,
+every late-night revision,
+every challenge you overcame,
+has prepared you for this moment."
+
+Animate text reveal while scrolling.
+
+---
+
+### Section 3 – Poem Experience
+
+This is the most important section.
+
+Use:
+
+background.JFIF
+
+as the background image.
+
+Requirements:
+
+* Fullscreen section
+* Dark overlay for readability
+* Background fixed with parallax effect
+* Elegant blur overlay
+* Text always highly visible
+
+Typography:
+
+* Font: Playfair Display for poem
+* Fallback: Georgia, serif
+* Font color: Gold (#FFD700)
+* Subtle text shadow
+* Desktop font size: 2rem
+* Mobile font size: 1.1rem
+* Line height: 2
+
+Poem must appear EXACTLY as written below.
+
+DO NOT CHANGE A SINGLE WORD.
+
+DO NOT MODIFY PUNCTUATION.
+
+DO NOT REWRITE.
+
+DO NOT ADD OR REMOVE WORDS.
+
+Break into separate lines exactly as follows:
+
+The books are closed, the pages turned,
+A journey you have bravely earned.
+
+So much you've learned, so much you've sown,
+Seeds of bright knowledge you have grown.
+
+Your mind's a garden, rich and deep,
+Where thoughts like flowers softly sleep,
+
+And wake for you, so sharp and clear,
+Dispelling every doubt and fear.
+
+Remember all the hours you've spent,
+Your dedication, heaven-sent.
+
+That steady effort, day by day,
+Will light your brilliant, chosen way.
+
+This test is just a passing breeze,
+A moment's pause among the trees.
+
+The wisdom you now hold so true,
+Will bloom forever within you.
+
+So walk in with a steady stride,
+Let courage be your faithful guide.
+
+Believe in all the strength you bear,
+You've got this, know that I care.
+
+And when it's done, and you look back,
+You'll see you stayed right on the track.
+
+The future waits, a shining prize,
+Reflected in your bright, clear eyes.
+
+Go on and shine, you're ready now,
+And take your well-deserved bow.
+
+Animation Requirements:
+
+* Each line appears individually.
+* Use GSAP ScrollTrigger.
+* Fade in + move upward.
+* Lines appear sequentially as user scrolls.
+* Lines remain visible after appearing.
+* When scrolling back up:
+
+  * reverse animation smoothly.
+  * lines disappear in reverse order.
+* Smooth easing.
+* No flickering.
+* Professional cinematic feel.
+
+---
+
+### Section 4 – Final Message
+
+Create a luxury glass card.
+
+Display:
+
+"Tomorrow is not a test of your worth.
+
+It is simply an opportunity to show what you already know.
+
+Walk in confidently.
+
+Walk out proudly."
+
+Animate each sentence separately.
+
+---
+
+### Section 5 – Ending Scene
+
+Fullscreen ending section.
+
+Background:
+
+* Animated stars
+* Purple and gold glow
+
+Center Message:
+
+"Whatever happens,
+
+I'm proud of you.
+
+Good luck."
+
+Animate with slow fade and glow.
+
+Add floating particles.
+
+Add a subtle shining effect.
+
+---
+
+## Advanced Animation Requirements
+
+use _Dark_Phoenix_and_Roses_Gothic_202606221922.JPEG as website favicon logo
+
+Use GSAP extensively.
+
+Include:
+
+* ScrollTrigger
+* Fade animations
+* Parallax backgrounds
+* Floating particles
+* Text reveal effects
+* Smooth section transitions
+* Mouse glow effect
+* Luxury hover effects
+
+Animation quality should feel like:
+
+* Apple product websites
+* Award-winning Awwwards websites
+* Modern luxury brand websites
+
+---
+
+## Accessibility
+
+* High text contrast
+* Mobile responsive
+* Readable typography
+* Optimized performance
+* Semantic HTML
+
+---
+
+## Final Output
+
+Generate:
+
+1. index.html
+2. style.css
+3. script.js
+
+Ensure the website runs immediately after opening index.html.
+
+Code quality should be production-ready, visually stunning, cinematic, elegant, emotional, and memorable.
